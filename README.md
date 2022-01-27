@@ -1,3 +1,32 @@
+# Kevin Hernandez's Portfolio
+
+![NPM](https://img.shields.io/npm/l/m)
+
+[License: MIT](LICENSE)
+
+## Description
+
+Full-stack Web Developer who recently earned a certificate in Web Development from The University of Texas at Austin, with newly developed skills in HTML, CSS, JavaScript, React.js, MongoDB, Express.js, NodeJS and responsive web design. I am ambitious in facing problems head-on and learning new technologies, with a focus on mobile-first design and development. I’m excited to leverage my skills to become a skilled Software Engineer. My personal portfolio showcases all my work, most of it during my time at The University of Texas at Austin, the portfolio also includes and "About Me" section, "Work" section, and links to "Contact Me"!
+
+## Table of Contents
+
+- [Built With](#built-with)
+- [Create-React-App](#getting-started)
+- [Screenshot](#screenshot)
+- [Website](#website)
+- [Contribution](#contribution)
+
+## Built With
+
+- HTML
+- CSS
+- Javascript
+- ReactJS
+- NodeJS
+- Bootstrap
+
+## Getting Started
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +97,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Screenshot
+
+![mockup!]()
+
+## Website
+
+-
+
+## Contribution
+
+- Made with 💜 by Kevin Hernandez
+
+### ©️2022 Kevin Hernandez
