@@ -1,32 +1,46 @@
 import React from 'react';
+import { FaBars } from 'react-icons/fa';
 // importing styling
-import { 
+import {  
     Nav, 
+    NavContainer,
+    NavLogo, 
     NavLink, 
-    Bars, 
-    NavMenu
+    NavMenu,
+    MobileIcon,
+    NavItem
 } from './NavElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
       <>
         <Nav>
-            <NavLink to='/welcome'>
-                <h1>Kevin Hernandez</h1>
-            </NavLink>
-            {/* hamburger menu */}
-            <Bars />
-            <NavMenu>
-                <NavLink to="/about" activeStyle>
-                    About
-                </NavLink>
-                <NavLink to="/projects" activeStyle>
-                    Projects
-                </NavLink>
-                <NavLink to="/contact" activeStyle>
+            <NavContainer>
+                <NavLogo to='/welcome'>Kevin Hernandez</NavLogo>
+                <MobileIcon onClick={toggle}>
+                    <FaBars />
+                </MobileIcon>
+                {/* nav menu */}
+                <NavMenu>
+                <NavItem>
+                    <NavLink to="/about" >
+                        About
+                    </NavLink>
+                </NavItem>
+
+                <NavItem>
+                    <NavLink to="/contact" >
                     Contact
-                </NavLink>
+                    </NavLink>
+                </NavItem>
+
+                <NavItem>
+                    <NavLink to="/projects" >
+                        Projects
+                    </NavLink>
+                </NavItem>
             </NavMenu>
+            </NavContainer>
         </Nav>
       </>
   );
