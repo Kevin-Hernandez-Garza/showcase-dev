@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 // importing css file as well
-import './index.css';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
