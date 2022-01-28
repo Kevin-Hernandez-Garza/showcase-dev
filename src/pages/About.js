@@ -1,6 +1,6 @@
 import React from 'react';
 // importing my own picture 
-import coverImage from '../../assets/me.jpg';
+import coverImage from '../assets/images/me.jpg';
 
 function About() {
     return (
