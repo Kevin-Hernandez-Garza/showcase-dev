@@ -75,13 +75,9 @@ export const HeroP = styled.p`
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
-    // display: none;
+    
     flex-direction: column;
     align-items: center;
-
-    // @media screen and (max-width: 480px) {
-    //     display: flex;
-    // }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
