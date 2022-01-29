@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
+import { TiLeaf } from 'react-icons/ti';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
@@ -10,6 +11,7 @@ import { Link as LinkS } from 'react-scroll';
 export const Nav  = styled.nav`
     background: #000;
     height: 80px;
+    margin-top: -80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,34 +24,6 @@ export const Nav  = styled.nav`
         transition: 0.8s all ease;
     }
 `;
-
-// individual links styling 
-// export const NavLink = styled(Link)`
-//     color: #fff;
-//     display: flex;
-//     align-items: center;
-//     text-decoration: none;
-//     padding: 0 1rem;
-//     height: 100%;
-//     cursor: pointer;
-    
-//     &.active {
-//         color: #15cdfc;
-//     }
-// `;
-
-// navMenu styling
-// export const NavMenu = styled.div`
-//     display: flex;
-//     align-items: center;
-//     list-style: none
-//     text-align: right;
-//     margin-right: 22px;
-
-//     @media screen and (max-width: 768px) {
-//         display: none;
-//     }
-// `;
 
 export const NavContainer = styled.div`
     display: flex;
@@ -71,6 +45,10 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -118,5 +96,23 @@ export const NavLink = styled(LinkS)`
     &.active {
         border-bottom: 2px solid #01bf71;
         
+    }
+`;
+
+
+export const NavImg = styled.div` {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100, 60%);
+        font-size: 1.8rem;
+        cursor: pointer; 
+        color: #fff;
+        margin-left: 1.8rem;
+        margin-top: 1rem;
     }
 `;

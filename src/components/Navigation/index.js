@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { TiLeaf as SmallImg} from 'react-icons/ti';
 // importing styling
 import {  
     Nav, 
@@ -8,7 +9,8 @@ import {
     NavLink, 
     NavMenu,
     MobileIcon,
-    NavItem
+    NavItem,
+    NavImg
 } from './NavElements';
 
 const Navbar = ({ toggle }) => {
@@ -17,6 +19,7 @@ const Navbar = ({ toggle }) => {
         <Nav>
             <NavContainer>
                 <NavLogo to='/welcome'>Kevin Hernandez</NavLogo>
+                <NavImg to='/welcome'src={SmallImg}> <SmallImg /></NavImg>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
