@@ -59,6 +59,7 @@ export const SidebarLink = styled(LinkR)`
     text-decoration: none; 
     color: #fff;
     cursor: pointer;
+    font-family: "Encode Sans Expanded", sans-serif !important;
 
     &:hover {
         color: #fff;
