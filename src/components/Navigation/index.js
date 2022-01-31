@@ -18,8 +18,8 @@ const Navbar = ({ toggle }) => {
       <>
         <Nav>
             <NavContainer>
-                <NavLogo to='welcome'>Kevin Hernandez</NavLogo>
-                <NavImg to='welcome'> <SmallImg /></NavImg>
+                <NavLogo to='/'>Kevin Hernandez</NavLogo>
+                <NavImg to='/'> <SmallImg /></NavImg>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
@@ -32,14 +32,14 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
 
                 <NavItem>
-                    <NavLink to="contact" >
-                    Contact
+                    <NavLink to="projects" >
+                        Projects
                     </NavLink>
                 </NavItem>
 
                 <NavItem>
-                    <NavLink to="projects" >
-                        Projects
+                    <NavLink to="contact" >
+                    Contact
                     </NavLink>
                 </NavItem>
             </NavMenu>
