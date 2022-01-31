@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { NavLink as Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
-import { TiLeaf } from 'react-icons/ti';
+// import { NavLink as Link } from 'react-router-dom';
+// import { FaBars } from 'react-icons/fa';
+// import { TiLeaf } from 'react-icons/ti';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
@@ -13,7 +13,7 @@ export const Nav  = styled.nav`
     height: 80px;
     margin-top: -80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
@@ -59,7 +59,7 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100, 60%);
+        transform: translate(0%, 0%);
         font-size: 1.8rem;
         cursor: pointer; 
         color: #fff;
@@ -94,8 +94,7 @@ export const NavLink = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 2px solid #01bf71;
-        
+        border-bottom: 3px solid #01bf71;
     }
 `;
 
