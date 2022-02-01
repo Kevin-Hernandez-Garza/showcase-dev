@@ -57,11 +57,8 @@ export const HeroP = styled.p`
     font-size: 60px;
     text-align: center;
     max-width: 600px;
-    // background-color: rgba(192,192,192, 0.88);
     padding: 30px;
     font-weight: 700;
-    // border-radius: 10%;
-    // outline: 5px solid #fff;
     text-shadow: 5px 5px 5px #000;
 
     @media screen and (max-width: 748px) {
