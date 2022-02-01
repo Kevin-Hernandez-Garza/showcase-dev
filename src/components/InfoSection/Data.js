@@ -28,7 +28,7 @@ export const homeObjTwo = {
     img: require('../../assets/images/svg-1.svg').default,
     alt: 'code pairing and fun',
     dark: true,
-    primary: true,
+    primary: false,
     darkText: true
 };
 

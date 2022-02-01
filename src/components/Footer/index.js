@@ -9,6 +9,7 @@ import {
     SocialIcons,
     SocialIconLink
 } from './FooterElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
@@ -17,12 +18,17 @@ import { TiLeaf } from 'react-icons/ti';
 
 
 const Footer = () => {
+
+      //  scroll to top function if the user clicks on the logo
+      const toggleHome = () => {
+        scroll.scrollToTop();
+    }
   return (
   <FooterContainer>
       <FooterWrap>
         <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo to='/'> 
+                <SocialLogo to='/' onClick={toggleHome}> 
                     < TiLeaf />
                 </SocialLogo>
             <WebsiteRights>Kevin Hernandez-Garza © {new Date().getFullYear()}</WebsiteRights>
