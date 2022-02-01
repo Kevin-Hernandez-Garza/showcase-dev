@@ -3,10 +3,12 @@ import HeroSection from '../components/HeroSection';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navigation';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne,
-        homeObjTwo,
-        homeObjThree
-        } from '../components/InfoSection/Data';
+import { 
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree
+} from '../components/InfoSection/Data';
+import Footer from '../components/Footer';
 
 const Home = () => {
 // [ StateName, functionUpdatingIt ] = useState(InitialState);
@@ -24,6 +26,8 @@ const Home = () => {
     <InfoSection {...homeObjOne}/>
     <InfoSection {...homeObjTwo}/>
     <InfoSection {...homeObjThree}/>
+    {/* Footer */}
+    <Footer />
   </>
   );
 };
