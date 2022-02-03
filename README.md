@@ -23,7 +23,7 @@ Full-stack Web Developer who recently earned a certificate in Web Development fr
 - Javascript
 - ReactJS
 - NodeJS
-- Bootstrap
+- Styled Components
 
 ## Getting Started
 
@@ -100,7 +100,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Screenshot
 
-![mockup!]()
+![mockup!](src/assets/videos/Portfolio-mock.gif)
 
 ## Website
 
