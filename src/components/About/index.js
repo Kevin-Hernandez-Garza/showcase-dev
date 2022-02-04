@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../ButtonElement';
+// import { Button } from '../ButtonElement';
 import {
     InfoContainer,
     InfoWrapper,
@@ -10,40 +10,27 @@ import {
     TopLine, 
     Heading, 
     Subtitle, 
-    BtnWrap,
+    // BtnWrap,
     ImgWrap,
     Img
 } from './AboutElements';
+import imageMe from '../../assets/images/me.jpg';
 
-const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, buttonLabel, primary, dark, dark2}) => {
+const About = () => {
   return <>
-    <InfoContainer lightBg={lightBg} id={id}>
+    <InfoContainer>
         <InfoWrapper>
-            <InfoRow imgStart={imgStart}>
+            <InfoRow>
                 <Column1>
                 <TextWrapper>
-                    <TopLine>{topLine}</TopLine>
-                    <Heading lightText={lightText}>{headline}</Heading>
-                    <Subtitle darkText={darkText}>{description}</Subtitle>
-                    <BtnWrap>
-                        {/* initial values added to react-scroll properties */}
-                        <Button to='home'
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact="true"
-                        offset={-80}
-                        primary={primary ? 1 : 0}
-                        dark={dark ? 1 : 0}
-                        dark2={dark2 ? 1 : 0}
-
-                        >{buttonLabel}</Button>
-                    </BtnWrap>
+                    <TopLine>About</TopLine>
+                    <Heading>Hi, I'm Kevin</Heading>
+                    <Subtitle>"Full-stack Web Developer who recently earned a certificate in Web Development from The University of Texas at Austin, with newly developed skills in JavaScript, CSS, HTML, React.js, and responsive web design. I am ambitious in facing problems head-on and learning new technologies, with a focus on mobile-first design and development. Excited to leverage my skills to become a skilled Software Engineer."</Subtitle>
                 </TextWrapper>
                 </Column1>
                 <Column2>
                     <ImgWrap>
-                        <Img  src={img} alt={alt}/>
+                        <Img  src={imageMe} alt="'A picture of myself'"/>
                     </ImgWrap>
                 </Column2>
             </InfoRow>
