@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { TiLeaf as SmallImg} from 'react-icons/ti';
 // importing the animateScroll from react-scroll
 import { animateScroll as scroll } from 'react-scroll';
+import { Link, useNavigate } from 'react-router-dom';
 // importing styling
 import {  
     Nav, 
@@ -21,11 +22,18 @@ const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     }
+
+    // useNavigate to Route between components
+    let navigate = useNavigate(); 
+
+
   return (
       <>
         <Nav>
             <NavContainer>
-                <NavLogo to='/' onClick={toggleHome}>Kevin Hernandez</NavLogo>
+                <NavLogo to='/' onClick={() => {
+                    navigate('/');
+                }}>Kevin Hernandez</NavLogo>
                 <NavImg to='/' onClick={toggleHome}> <SmallImg /></NavImg>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
@@ -34,13 +42,15 @@ const Navbar = ({ toggle }) => {
                 <NavMenu>
                 <NavItem>
                     <NavLink 
-                    to="about" 
-                    smooth={true} 
-                    duration={0}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    activeClass='active'
+                    // to="/about" 
+                    // smooth={true} 
+                    // duration={0}
+                    // spy={true}
+                    // exact='true'
+                    // offset={-80}
+                    // activeClass='active'
+
+                    onClick={() => { navigate('/about');}}
                     >
                     About
                     </NavLink>
@@ -48,13 +58,15 @@ const Navbar = ({ toggle }) => {
 
                 <NavItem>
                     <NavLink 
-                    to="projects"
-                    smooth={true} 
-                    duration={0}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    activeClass='active'
+                    // to="/projects"
+                    // smooth={true} 
+                    // duration={0}
+                    // spy={true}
+                    // exact='true'
+                    // offset={-80}
+                    // activeClass='active'
+
+                    onClick={() => { navigate('/projects'); } }
                     >
                     Projects
                     </NavLink>
@@ -62,13 +74,15 @@ const Navbar = ({ toggle }) => {
 
                 <NavItem>
                     <NavLink 
-                    to="contact" 
-                    smooth={true} 
-                    duration={0}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    activeClass='active'
+                    // to="/contact" 
+                    // smooth={true} 
+                    // duration={0}
+                    // spy={true}
+                    // exact='true'
+                    // offset={-80}
+                    // activeClass='active'
+
+                    onClick={() => { navigate('/contact');}}
                     >
                     Contact
                     </NavLink>
