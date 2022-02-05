@@ -9,26 +9,32 @@ import {
     SocialIcons,
     SocialIconLink
 } from './FooterElements';
-import { animateScroll as scroll } from 'react-scroll';
+// import { animateScroll as scroll } from 'react-scroll';
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
 import { TiLeaf } from 'react-icons/ti';
 
+// importing the useNavigate hook
+import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
 
-      //  scroll to top function if the user clicks on the logo
-      const toggleHome = () => {
-        scroll.scrollToTop();
-    }
-  return (
-  <FooterContainer>
+//  scroll to top function if the user clicks on the logo
+//   const toggleHome = () => {
+//     scroll.scrollToTop();
+// }
+    let navigate = useNavigate();
+
+    return (
+    <FooterContainer>
       <FooterWrap>
         <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo to='/' onClick={toggleHome}> 
+                <SocialLogo to='/showcase-dev' onClick={() => {
+                    navigate('/showcase-dev');
+                }}> 
                     < TiLeaf />
                 </SocialLogo>
             <WebsiteRights>Kevin Hernandez-Garza © {new Date().getFullYear()}</WebsiteRights>
@@ -43,8 +49,8 @@ const Footer = () => {
             </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
-  </FooterContainer>
-  )
+     </FooterContainer>
+    )
 };
 
 export default Footer;
