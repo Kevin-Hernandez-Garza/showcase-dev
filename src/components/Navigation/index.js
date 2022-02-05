@@ -31,8 +31,8 @@ const Navbar = ({ toggle }) => {
       <>
         <Nav>
             <NavContainer>
-                <NavLogo to='/' onClick={() => {
-                    navigate('/');
+                <NavLogo to='/showcase-dev' onClick={() => {
+                    navigate('/showcase-dev');
                 }}>Kevin Hernandez</NavLogo>
                 <NavImg to='/' onClick={toggleHome}> <SmallImg /></NavImg>
                 <MobileIcon onClick={toggle}>

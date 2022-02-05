@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
     let navigate = useNavigate();
-    
+
     const [ hover, setHover ] = useState(false);
     const onHover = () => {
         setHover(!hover);
@@ -32,14 +32,14 @@ const HeroSection = () => {
           </HeroP>
           <HeroBtnWrapper>
               <Button onClick={() => {navigate('/about')}} onMouseEnter={onHover} onMouseLeave={onHover} 
-              primary='true'
-              dark='true'
-              smooth={true} 
-            duration={0}
-            spy={true}
-            exact='true'
-            offset={-80}
-            activeClass='active'
+                primary='true'
+                dark='true'
+                smooth={true} 
+                duration={0}
+                spy={true}
+                exact='true'
+                offset={-80}
+                activeClass='active'
               >
                   Learn More { hover ? <ArrowForward /> : <ArrowRight />}
               </Button>

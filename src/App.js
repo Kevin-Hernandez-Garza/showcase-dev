@@ -16,8 +16,8 @@ function App() {
       <Nav />
       <Sidebar />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/' element={<InfoSection />} />
+        <Route path='/showcase-dev' element={<Home />}/>
+        <Route path='/showcase-dev' element={<InfoSection />} />
         <Route path='/about' element={<About />}/>
         {/* <Route path='/contact' element={<Contact />}/>
         <Route path='/projects' element={<Project />}/> */}
