@@ -2,8 +2,8 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { TiLeaf as SmallImg} from 'react-icons/ti';
 // importing the animateScroll from react-scroll
-import { animateScroll as scroll } from 'react-scroll';
-import { Link, useNavigate } from 'react-router-dom';
+// import { animateScroll as scroll } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 // importing styling
 import {  
     Nav, 
@@ -19,9 +19,9 @@ import {
 const Navbar = ({ toggle }) => {
 
     //  scroll to top function if the user clicks on the logo
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
+    // const toggleHome = () => {
+    //     scroll.scrollToTop();
+    // }
 
     // useNavigate to Route between components
     let navigate = useNavigate(); 
@@ -34,7 +34,9 @@ const Navbar = ({ toggle }) => {
                 <NavLogo to='/showcase-dev' onClick={() => {
                     navigate('/showcase-dev');
                 }}>Kevin Hernandez</NavLogo>
-                <NavImg to='/' onClick={toggleHome}> <SmallImg /></NavImg>
+                <NavImg to='/showcase-dev' onClick={() => {
+                    navigate('/showcase-dev')
+                }}> <SmallImg /></NavImg>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
