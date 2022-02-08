@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
                 <NavMenu>
                 <NavItem>
                     <NavLink 
-                    // to="/about" 
+                    to="/about" 
                     // smooth={true} 
                     // duration={0}
                     // spy={true}
@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
 
                 <NavItem>
                     <NavLink 
-                    // to="/projects"
+                    to="/projects"
                     // smooth={true} 
                     // duration={0}
                     // spy={true}
@@ -76,7 +76,7 @@ const Navbar = ({ toggle }) => {
 
                 <NavItem>
                     <NavLink 
-                    // to="/contact" 
+                    to="/contact" 
                     // smooth={true} 
                     // duration={0}
                     // spy={true}
