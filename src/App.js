@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import InfoSection from './components/InfoSection';
 import Project from './components/Project';
+import Contact from './components/Contact';
 import { projectOne } from './components/Project/Data';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route path='/showcase-dev' element={<Home />}/>
         <Route path='/showcase-dev' element={<InfoSection />} />
         <Route path='/about' element={<About />}/>
-        {/* <Route path='/contact' element={<Contact />}/> */}
+        <Route path='/contact' element={<Contact />}/>
         <Route path='/projects' element={<Project {...projectOne } />}/>
         <Route path='*' element={<NoMatch />}/>
       </Routes>
