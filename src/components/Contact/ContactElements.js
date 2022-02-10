@@ -15,6 +15,6 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-    width: 20rem;
+    width: 100%;
 `;
 
