@@ -11,7 +11,6 @@ import Sidebar from './components/Sidebar';
 import InfoSection from './components/InfoSection';
 import Project from './components/Project';
 import Contact from './components/Contact';
-import { projectOne } from './components/Project/Data';
 
 function App() {
   // [ StateName, functionUpdatingIt ] = useState(InitialState);
@@ -30,7 +29,7 @@ function App() {
         <Route path='/showcase-dev' element={<InfoSection />} />
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
-        <Route path='/projects' element={<Project {...projectOne } />}/>
+        <Route path='/projects' element={<Project />}/>
         <Route path='*' element={<NoMatch />}/>
       </Routes>
       < Footer />

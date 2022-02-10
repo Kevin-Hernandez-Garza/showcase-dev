@@ -7,10 +7,12 @@ export const ContactContainer = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    background: #010606;
+    // background: #010606;
+    
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        width: 100%;
     }
 `;
 
