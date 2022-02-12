@@ -1,12 +1,4 @@
 import React from 'react';
-// styled components ** REFACTOR SO ALL CSS STYLES ARE IN THE APP.CSS FILE **
-// import  {
-//     CardContainer, 
-//     Image, 
-//     CardBody, 
-//     Heading,
-//     Description
-// } from './ProjectElements';
 
 const Project = (props) => {
     // inserting the projects section
@@ -60,20 +52,6 @@ const Project = (props) => {
             deployed: "https://github.com/Kevin-Hernandez-Garza"
         },
     ]);
-
-    // return <>
-    // {projects.map((item, index ) => {
-    //     <CardContainer key={index} className="card">
-    //     <Image src={item.img} className="card-img-top" alt={item.alt} />
-    //     <CardBody className="card-body">
-    //     <Heading className="card-title">{item.title}</Heading>
-    //     <Description className="card-text">{item.description}</Description>
-    //     <a href={item.github} className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
-    //     <a href={item.deployed} className="btn btn-primary" target="_blank" rel="noreferrer">Deployed</a>
-    //     </CardBody>
-    //     </CardContainer>
-    // })}
-    // </>;
 
     return (
     <div className='project-section'>
