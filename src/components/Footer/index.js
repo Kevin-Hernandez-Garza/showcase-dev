@@ -20,11 +20,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
-
-//  scroll to top function if the user clicks on the logo
-//   const toggleHome = () => {
-//     scroll.scrollToTop();
-// }
+    // useNavigate hook to navigate to different components
     let navigate = useNavigate();
 
     return (

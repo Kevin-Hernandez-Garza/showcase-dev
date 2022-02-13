@@ -1,12 +1,7 @@
 import styled from 'styled-components';
-// import { NavLink as Link } from 'react-router-dom';
-// import { FaBars } from 'react-icons/fa';
-// import { TiLeaf } from 'react-icons/ti';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
-
-// storing styled components
 // the whole navbar styling 
 export const Nav  = styled.nav`
     background: #000;
@@ -97,7 +92,6 @@ export const NavLink = styled(LinkS)`
         border-bottom: 3px solid #74c69d;
     }
 `;
-
 
 export const NavImg = styled.div` {
     display: none;

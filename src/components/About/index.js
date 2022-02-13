@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Button } from '../ButtonElement';
 import {
     InfoContainer,
     InfoWrapper,
@@ -9,8 +8,7 @@ import {
     TextWrapper,
     TopLine, 
     Heading, 
-    Subtitle, 
-    // BtnWrap,
+    Subtitle,
     ImgWrap,
     Img
 } from './AboutElements';
