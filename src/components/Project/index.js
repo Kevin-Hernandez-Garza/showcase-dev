@@ -27,7 +27,6 @@ const Project = (props) => {
             github: "https://github.com/Kevin-Hernandez-Garza/Horiseon-Refactor-Marketing-Site"
         },
         {
-            // fix
             img: require('../../assets/images/runBuddy-mockup.png'), 
             alt: 'personal trainer', 
             title: 'Run Buddy', 
@@ -54,19 +53,34 @@ const Project = (props) => {
     ]);
 
     return (
-    <div className='project-section'>
-        <div className="flex-row">
-            {projects.map((projects, i) => (
-                <img 
-                src={projects.img}  //.default
-                alt={projects.alt}
-                key={i}
-                className='project-to'
-                />
-            ))}
+    // <div className='project-section'>
+    //     <div className="flex-row">
+    //         {projects.map((projects, i) => (
+    //             <img 
+    //             src={projects.img}  //.default
+    //             alt={projects.alt}
+    //             key={i}
+    //             className='project-to'
+    //             />
+    //         ))}
+    //     </div>
+    // </div>
+
+    <div className='project-section row'>
+        {projects.map((projects, i) => (
+        <div class="card col-4">
+        <img src={projects.img} class="card-img-top" alt={projects.alt} />
+        <div class="card-body">
+            <h5 class="card-title">{projects.title}</h5>
+            <p class="card-text">{projects.description}</p>
         </div>
+        <div class="card-body">
+            <a href={projects.github} class="card-link" target="_blank" rel='noreferrer'>Github</a>
+            <a href={projects.deployed} class="card-link" target="_blank" rel='noreferrer'>Deployed</a>
+        </div>
+        </div>
+        ))};
     </div>
-    )
-};
+)};
 
 export default Project;

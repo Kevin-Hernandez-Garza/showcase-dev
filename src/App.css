@@ -16,11 +16,8 @@
 
 .project-section {
   margin-top: 16rem;
-}
-
-.project-to {
-  display: flex-row;
-  width: 40%;
+  margin-bottom: 16rem;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {

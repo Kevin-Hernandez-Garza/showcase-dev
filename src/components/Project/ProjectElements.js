@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     font-size 1.5rem;
-    width: 18rem;
+    display: flex;
+    width: 100%;
+
 `;
 
 export const Image = styled.img`
