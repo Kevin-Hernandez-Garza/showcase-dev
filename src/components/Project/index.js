@@ -46,32 +46,19 @@ const Project = (props) => {
             img: require('../../assets/images/coming-soon.jpeg'), 
             alt: 'under construction', 
             title: 'Coming Soon', 
-            description: 'Looking for a great meal for tonight!?', 
+            description: 'Under construction!', 
             github: "https://github.com/Kevin-Hernandez-Garza", 
             deployed: "https://github.com/Kevin-Hernandez-Garza"
         },
     ]);
 
     return (
-    // <div className='project-section'>
-    //     <div className="flex-row">
-    //         {projects.map((projects, i) => (
-    //             <img 
-    //             src={projects.img}  //.default
-    //             alt={projects.alt}
-    //             key={i}
-    //             className='project-to'
-    //             />
-    //         ))}
-    //     </div>
-    // </div>
-
     <div className='project-section row'>
         {projects.map((projects, i) => (
         <div class="card col-4">
         <img src={projects.img} class="card-img-top" alt={projects.alt} />
         <div class="card-body">
-            <h5 class="card-title">{projects.title}</h5>
+            <h2 class="card-title">{projects.title}</h2>
             <p class="card-text">{projects.description}</p>
         </div>
         <div class="card-body">
