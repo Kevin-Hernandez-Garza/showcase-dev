@@ -10,22 +10,41 @@ import {
   FaFilePdf, 
   FaPhone } from 'react-icons/fa';
 import { IoMdMailUnread } from 'react-icons/io'; 
+import { IconContext } from 'react-icons';
 
 const Contact = () => {
   return <>
     <ContactContainer>
         <ContactWrapper>
         <div className="card">
-            <div className="card-header bg-success text-white">
+            <div className="card-header">
             Let's Chat
             </div>
             <ul className="list-group list-group-flush">
-            <li className="list-group-item bg-success bg-opacity-25"><a href='https://www.linkedin.com/in/kevin-hernandez-garza/' target='_blank' rel='noreferrer'>< FaLinkedin /></a></li>
-            <li className="list-group-item bg-success bg-opacity-25"><a href='https://stackoverflow.com/users/15588244/kevin-hernandez' target='_blank' rel='noreferrer'>< FaStackOverflow /></a></li>
-            <li className="list-group-item bg-success bg-opacity-25"><a href='https://github.com/Kevin-Hernandez-Garza' target='_blank' rel='noreferrer'>< FaGithub /></a></li>
-            <li className="list-group-item bg-success bg-opacity-25"><a href="tel:+5129214359">< FaPhone /></a></li>
-            <li className="list-group-item bg-success bg-opacity-25"><a href='mailto:kev.hernandezgarza@gmail.com' target='_blank' rel='noreferrer'>< IoMdMailUnread /></a></li>
-            <li className="list-group-item bg-success bg-opacity-25"><a href='https://docs.google.com/document/d/1MwDGSSuVS63MV-Dx-smcoRNjM5kvXt2k5-k2cQy3KZ8/edit?usp=sharing' target='_blank' rel='noreferrer'>< FaFilePdf /></a></li>
+            
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href='https://www.linkedin.com/in/kevin-hernandez-garza/' target='_blank' rel='noreferrer'>< FaLinkedin /></a></li>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href='https://stackoverflow.com/users/15588244/kevin-hernandez' target='_blank' rel='noreferrer'>< FaStackOverflow /></a></li>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href='https://github.com/Kevin-Hernandez-Garza' target='_blank' rel='noreferrer'>< FaGithub /></a></li>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href="tel:+5129214359">< FaPhone /></a></li>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href='mailto:kev.hernandezgarza@gmail.com' target='_blank' rel='noreferrer'>< IoMdMailUnread /></a></li>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: 'black'}}>
+            <li className="list-group-item"><a href='https://docs.google.com/document/d/1MwDGSSuVS63MV-Dx-smcoRNjM5kvXt2k5-k2cQy3KZ8/edit?usp=sharing' target='_blank' rel='noreferrer'>< FaFilePdf /></a></li>
+            </IconContext.Provider>
             </ul>
         </div>
         </ContactWrapper>

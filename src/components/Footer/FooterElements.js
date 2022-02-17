@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
     background-color: #1b4332;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    min-height: 40vh;
 `;
 
 export const FooterWrap = styled.div`
     padding: 48px 24px;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,7 +40,7 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinkItems = styled.a`
     color: #fff;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
     font-size: 14px;
     display: flex;
     flex-direction: column;

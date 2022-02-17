@@ -28,19 +28,19 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarLink to='/about' onClick={() => {
                     navigate('/about');
                 }}>
-                    About
+                    ABOUT
                 </SidebarLink>
 
                 <SidebarLink to='/projects' onClick={() => {
                     navigate('/projects');
                 }}>
-                    Projects
+                    PROJECTS
                 </SidebarLink>
 
                 <SidebarLink to='/contact' onClick={() => {
                     navigate('/contact');
                 }}>
-                    Contact
+                    CONTACT
                 </SidebarLink>
 
               </SidebarMenu>

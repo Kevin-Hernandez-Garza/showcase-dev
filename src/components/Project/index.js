@@ -55,15 +55,15 @@ const Project = (props) => {
     return (
     <div className='project-section row'>
         {projects.map((projects, i) => (
-        <div class="card col-4">
-        <img src={projects.img} class="card-img-top" alt={projects.alt} />
-        <div class="card-body">
-            <h2 class="card-title">{projects.title}</h2>
-            <p class="card-text">{projects.description}</p>
+        <div className="card col-4">
+        <img src={projects.img} className="card-img-top" alt={projects.alt} />
+        <div className="card-body">
+            <h2 className="card-title">{projects.title}</h2>
+            <p className="card-text">{projects.description}</p>
         </div>
-        <div class="card-body">
-            <a href={projects.github} class="card-link" target="_blank" rel='noreferrer'>Github</a>
-            <a href={projects.deployed} class="card-link" target="_blank" rel='noreferrer'>Deployed</a>
+        <div className="card-body">
+            <a href={projects.github} className="card-link badge" target="_blank" rel='noreferrer'>Github</a>
+            <a href={projects.deployed} className="card-link badge" target="_blank" rel='noreferrer'>Deployed</a>
         </div>
         </div>
         ))};

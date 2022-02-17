@@ -24,7 +24,7 @@ const Footer = () => {
     let navigate = useNavigate();
 
     return (
-    <FooterContainer>
+    <FooterContainer className='mt-auto'>
       <FooterWrap>
         <SocialMedia>
             <SocialMediaWrap>

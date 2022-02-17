@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
       <>
         <Nav>
             <NavContainer>
-                <NavLogo to='/showcase-dev' onClick={() => {
+                <NavLogo className='nav-link' to='/showcase-dev' onClick={() => {
                     navigate('/showcase-dev');
                 }}>Kevin Hernandez</NavLogo>
                 <NavImg to='/showcase-dev' onClick={() => {
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
                 {/* nav menu */}
                 <NavMenu>
                 <NavItem>
-                    <NavLink 
+                    <NavLink className='nav-link' 
                     to="/about" 
                     onClick={() => { navigate('/about');}}
                     >
@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
 
                 <NavItem>
-                    <NavLink 
+                    <NavLink className='nav-link' 
                     to="/projects"
                     onClick={() => { navigate('/projects'); } }
                     >
@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
 
                 <NavItem>
-                    <NavLink 
+                    <NavLink className='nav-link' 
                     to="/contact" 
                     onClick={() => { navigate('/contact');}}
                     >
