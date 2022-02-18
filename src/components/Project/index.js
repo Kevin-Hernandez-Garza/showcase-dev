@@ -43,12 +43,12 @@ const Project = (props) => {
             deployed: "https://kevin-hernandez-garza.github.io/firstproj/"
         },
         {
-            img: require('../../assets/images/coming-soon.jpeg'), 
-            alt: 'under construction', 
-            title: 'Coming Soon', 
-            description: 'Under construction!', 
-            github: "https://github.com/Kevin-Hernandez-Garza", 
-            deployed: "https://github.com/Kevin-Hernandez-Garza"
+            img: require('../../assets/images/portfolioV1.png'), 
+            alt: 'my online resume', 
+            title: 'Portfolio V1', 
+            description: 'My portfolio V1', 
+            github: "https://github.com/Kevin-Hernandez-Garza/fullStack-WebDev", 
+            deployed: "https://kevin-hernandez-garza.github.io/fullStack-WebDev/"
         },
     ]);
 

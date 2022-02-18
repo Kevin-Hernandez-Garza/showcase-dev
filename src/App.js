@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // importing components
-// import NoMatch from './pages/NoMatch';
+import NoMatch from './pages/NoMatch';
 import Home from './components/HeroSection';
 import Nav from './components/Navigation';
 import About from './components/About';
@@ -30,7 +30,7 @@ function App() {
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/projects' element={<Project />}/>
-        {/* <Route path='*' element={<NoMatch />}/> */}
+        <Route path='*' element={<NoMatch />}/>
       </Routes>
       < Footer />
     </Router>
