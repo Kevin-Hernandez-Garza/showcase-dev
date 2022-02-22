@@ -6,7 +6,7 @@
 
 ## Description
 
-Full-stack Web Developer who recently earned a certificate in Web Development from The University of Texas at Austin, with newly developed skills in HTML, CSS, JavaScript, React.js, MongoDB, Express.js, NodeJS and responsive web design. I am ambitious in facing problems head-on and learning new technologies, with a focus on mobile-first design and development. I’m excited to leverage my skills to become a skilled Software Engineer. My personal portfolio showcases all my work, most of it during my time at The University of Texas at Austin, the portfolio also includes and "About Me" section, "Work" section, and links to "Contact Me"!
+Programmer who recently earned a certificate in Full-stack Web Development from The University of Texas at Austin, with newly developed skills in HTML, CSS, JavaScript, React.js, MongoDB, Express.js, NodeJS and responsive web design. I am ambitious in facing problems head-on and learning new technologies, with a focus on mobile-first design and development. I’m excited to leverage my skills to become a skilled Software Engineer. My personal portfolio showcases some of my projects im most proud of! The portfolio also includes and "About Me", "Work", and "Contact Me" section so we can stay in touch!
 
 ## Table of Contents
 
