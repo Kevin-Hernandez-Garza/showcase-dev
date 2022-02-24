@@ -43,7 +43,7 @@ const Contact = () => {
             </IconContext.Provider>
 
             <IconContext.Provider value={{ color: 'black'}}>
-            <li className="list-group-item"><a href='https://docs.google.com/document/d/1MwDGSSuVS63MV-Dx-smcoRNjM5kvXt2k5-k2cQy3KZ8/edit?usp=sharing' target='_blank' rel='noreferrer'>< FaFilePdf /></a></li>
+            <li className="list-group-item"><a href='https://1drv.ms/w/s!AggVRF3HmOCdfM-iqXHzxyWqPYU' target='_blank' rel='noreferrer'>< FaFilePdf /></a></li>
             </IconContext.Provider>
             </ul>
         </div>
