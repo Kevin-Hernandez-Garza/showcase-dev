@@ -44,7 +44,6 @@ const Project = (props) => {
             title: 'The Start of My Coding Journey',
             technologies: 'skills: HTML, CSS book by Jon Duckett',
             description: 'My first ever web application', 
-            technologies: 'skills: HTML, CSS',
             github: "https://github.com/Kevin-Hernandez-Garza/firstproj", 
             deployed: "https://kevin-hernandez-garza.github.io/firstproj/"
         },
