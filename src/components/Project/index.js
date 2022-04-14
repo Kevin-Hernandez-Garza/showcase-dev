@@ -6,7 +6,8 @@ const Project = (props) => {
             img: require('../../assets/images/group-mock.png'), 
             alt: 'git-a-recipe application', 
             title: 'Git-A-Recipe', 
-            description: 'Looking for a great meal for tonight!?', 
+            description: 'Are you HUNGRY?',
+            technologies: 'skills: HTML, CSS, JavaScript, MaterializeUI, Server-Side API', 
             github: "https://github.com/Kevin-Hernandez-Garza/recipe-app", 
             deployed: "https://adamromano89.github.io/recipe-app/"
         },
@@ -14,31 +15,36 @@ const Project = (props) => {
             img: require('../../assets/images/group-2.png'), 
             alt: 'fragrance e-commerce store', 
             title: 'BM Fragrance', 
-            description: 'All perfumes and colognes in one place!', 
-            github: "https://github.com/Kevin-Hernandez-Garza/group-2", 
+            description: 'Fragrance Store', 
+            technologies: 'skills: HTML, CSS, JavaScript, MySQL, Handlebars.js, RESTapi, Bootstrap.js',
+            github: "https://github.com/Kevin-Hernandez-Garza/BM-E-Commerce-Project", 
             deployed: "https://byteme-ecommerce.herokuapp.com/"
         },
         {
-            img: require('../../assets/images/horiseon-mockup.png'), 
-            alt: 'business firm', 
-            title: 'Horiseon', 
-            description: 'Business mock web application', 
-            deployed: "https://kevin-hernandez-garza.github.io/Horiseon-Refactor-Marketing-Site/", 
-            github: "https://github.com/Kevin-Hernandez-Garza/Horiseon-Refactor-Marketing-Site"
+            img: require('../../assets/images/justawear-mock.png'), 
+            alt: 'clothing store', 
+            title: 'Just-A-Wear', 
+            description: 'Clothing Store', 
+            technologies: 'skills: HTML, CSS, JavaScript, React.js, GraphQL, Stripe, JWTs, Mongoose, TailwindCSS',
+            deployed: "https://github.com/Kevin-Hernandez-Garza/justAwear", 
+            github: "https://justawear-mern.herokuapp.com/"
         },
         {
             img: require('../../assets/images/runBuddy-mockup.png'), 
             alt: 'personal trainer', 
             title: 'Run Buddy', 
             description: 'Need a personal trainer!?', 
-            github: "https://github.com/Kevin-Hernandez-Garza/recipe-app", 
-            deployed: "https://adamromano89.github.io/recipe-app/"
+            technologies: 'skills: HTML, CSS',
+            github: "https://github.com/Kevin-Hernandez-Garza/run-buddy", 
+            deployed: "https://kevin-hernandez-garza.github.io/run-buddy/"
         },
         {
             img: require('../../assets/images/webpage-screenshot.png'), 
             alt: 'first website', 
-            title: 'My Journey', 
+            title: 'The Start of My Coding Journey',
+            technologies: 'skills: HTML, CSS book by Jon Duckett',
             description: 'My first ever web application', 
+            technologies: 'skills: HTML, CSS',
             github: "https://github.com/Kevin-Hernandez-Garza/firstproj", 
             deployed: "https://kevin-hernandez-garza.github.io/firstproj/"
         },
@@ -47,6 +53,7 @@ const Project = (props) => {
             alt: 'my online resume', 
             title: 'Portfolio V1', 
             description: 'My portfolio V1', 
+            technologies: 'skills: HTML, CSS, Bootstrap.js',
             github: "https://github.com/Kevin-Hernandez-Garza/fullStack-WebDev", 
             deployed: "https://kevin-hernandez-garza.github.io/fullStack-WebDev/"
         },
@@ -60,6 +67,7 @@ const Project = (props) => {
         <div className="card-body">
             <h2 className="card-title">{projects.title}</h2>
             <p className="card-text">{projects.description}</p>
+            <p className="card-text">{projects.technologies}</p>
         </div>
         <div className="card-body">
             <a href={projects.github} className="card-link badge" target="_blank" rel='noreferrer'>Github</a>
