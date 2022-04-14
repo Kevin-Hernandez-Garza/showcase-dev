@@ -26,8 +26,8 @@ const Project = (props) => {
             title: 'Just-A-Wear', 
             description: 'Clothing Store', 
             technologies: 'skills: HTML, CSS, JavaScript, React.js, GraphQL, Stripe, JWTs, Mongoose, TailwindCSS',
-            deployed: "https://github.com/Kevin-Hernandez-Garza/justAwear", 
-            github: "https://justawear-mern.herokuapp.com/"
+            github: "https://github.com/Kevin-Hernandez-Garza/justAwear", 
+            deployed: "https://justawear-mern.herokuapp.com/"
         },
         {
             img: require('../../assets/images/runBuddy-mockup.png'), 
