@@ -43,7 +43,7 @@ const Contact = () => {
             </IconContext.Provider>
 
             <IconContext.Provider value={{ color: 'black'}}>
-            <li className="list-group-item"><a href='https://1drv.ms/w/s!AggVRF3HmOCdgSm2cokwhLDi9hU6' target='_blank' rel='noreferrer'>< FaFilePdf /></a></li>
+            <iframe src="https://onedrive.live.com/embed?cid=9DE098C75D441508&resid=9DE098C75D441508%21186&authkey=AB7mfFsqgX-f0A4&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
             </IconContext.Provider>
             </ul>
         </div>
