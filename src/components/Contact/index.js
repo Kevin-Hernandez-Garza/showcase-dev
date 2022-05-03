@@ -43,7 +43,7 @@ const Contact = () => {
             </IconContext.Provider>
 
             <IconContext.Provider value={{ color: 'black'}}>
-            <li><iframe src="https://onedrive.live.com/embed?cid=9DE098C75D441508&resid=9DE098C75D441508%21186&authkey=AB7mfFsqgX-f0A4&em=2" width="100%" height="300" frameborder="0" scrolling="no"></iframe></li>
+            <li><iframe src="https://onedrive.live.com/embed?cid=9DE098C75D441508&resid=9DE098C75D441508%21186&authkey=AB7mfFsqgX-f0A4&em=2" width="100%" height="100%" frameborder="0" scrolling="no"></iframe></li>
             </IconContext.Provider>
             </ul>
         </div>
